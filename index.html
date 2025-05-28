@@ -1,30 +1,145 @@
 <!DOCTYPE html>
-<html lang="kk">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>3D Модель Мысалы</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>English Grammar A1-A2</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- 3D Model Viewer -->
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    .rule {
+      margin-bottom: 40px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      background-color: #fafafa;
+    }
+
+    model-viewer {
+      width: 100%;
+      height: 300px;
+      background-color: #eee;
+      border-radius: 10px;
+      margin: 10px 0;
+    }
+
+    audio {
+      width: 100%;
+      margin-top: 10px;
+    }
+  </style>
 </head>
 <body>
+  <div class="container">
+    <h1>English Grammar (A1–A2)</h1>
 
-  <h1>Сөз: Алма 🍎</h1>
+    <!-- A1 Rules -->
+    <section>
+      <h2>A1 Level</h2>
 
-  <p>Мынау – алманың 3D моделі. Оны айналдырып көріңіз!</p>
+      <div class="rule">
+        <h3>1. To be (am/is/are)</h3>
+        <p>Example: I am a student. She is happy.<br> Қазақша: Мен студентпін. Ол бақытты.</p>
+        <model-viewer src="happy student.glb" alt="To be model" auto-rotate camera-controls ar></model-viewer>
+        <audio controls src="audio/e1.mp3"></audio>
+      </div>
 
-  <model-viewer 
-    src="https://modelviewer.dev/shared-assets/models/Apple.glb"
-    alt="3D алма моделі" 
-    auto-rotate 
-    camera-controls 
-    shadow-intensity="1" 
-    style="width: 400px; height: 400px;">
-  </model-viewer>
+      <div class="rule">
+        <h3>2. Simple Present</h3>
+        <p>Example: He plays football. I like apples.<br> Қазақша: Ол футбол ойнайды. Маған алма ұнайды.</p>
+        <model-viewer src="assets/play soccer.glb" alt="Simple Present" auto-rotate camera-controls ar></model-viewer>
+        <model-viewer src="assets/apples.glb" alt="Simple Present" auto-rotate camera-controls ar></model-viewer>
+        <audio controls src="audio/e2.mp3"></audio>
+      </div>
 
-  <button onclick="playAudio()">Дыбысын тыңдау</button>
-  <audio id="wordAudio" src="https://ssl.gstatic.com/dictionary/static/sounds/20200429/apple--_us_1.mp3"></audio>
+      <div class="rule">
+        <h3>3. Articles (a/an/the)</h3>
+        <p>Example: I saw a cat. The cat was black.<br> Қазақша: Мен мысықты көрдім. Мысық қара түсті.</p>
+        <model-viewer src="cat.glb" alt="Articles" auto-rotate camera-controls ar></model-viewer>
+        <audio controls src="audio/e3.mp3"></audio>
+      </div>
 
+      <div class="rule">
+        <h3>4. Pronouns</h3>
+        <p>Example: This is my book. That is yours.<br> Қазақша: Бұл менің кітабым. Бұл сенікі.</p>
+        <model-viewer src="book.glb" alt="Pronouns" auto-rotate camera-controls ar></model-viewer>
+        <audio controls src="audio/e4.mp3"></audio>
+      </div>
+
+      <div class="rule">
+        <h3>5. Prepositions of place</h3>
+        <p>Example: The book is on the table.<br> Қазақша: Кітап үстел үстінде.</p>
+        <model-viewer src="assets/tableandbook.glb" alt="Prepositions" auto-rotate camera-controls ar></model-viewer>
+        <audio controls src="audio/e5.mp3"></audio>
+      </div>
+    </section>
+
+    <!-- A2 Rules -->
+    <section>
+      <h2>A2 Level</h2>
+
+      <div class="rule">
+        <h3>1. Past Simple</h3>
+        <p>Example: I visited my grandma yesterday.<br> Қазақша: Мен кеше әжеме бардым.</p>
+        <model-viewer src="A1/grandmother.glb" alt="Past Simple" auto-rotate camera-controls ar></model-viewer>
+        <audio controls src="audio/e6.mp3"></audio>
+      </div>
+
+      <div class="rule">
+        <h3>2. There is / There are</h3>
+        <p>Example: There is a book on the table.<br> Қазақша: Үстелде кітап бар.</p>
+        <model-viewer src="assets/tableandbook.glb" alt="There is/are" auto-rotate camera-controls ar></model-viewer>
+        <audio controls src="audio/e7.mp3"></audio>
+      </div>
+
+      <div class="rule">
+        <h3>3. Countable / Uncountable Nouns</h3>
+        <p>Example: I have some water. I need a few apples.<br> Қазақша: Менде су бар. Маған бірнеше алма керек.</p>
+        <model-viewer src="A1/water.glb" alt="Countable nouns" auto-rotate camera-controls ar></model-viewer>
+        <model-viewer src="assets/apples.glb" alt="Countable nouns" auto-rotate camera-controls ar></model-viewer>
+        <audio controls src="audio/e8.mp3"></audio>
+      </div>
+
+      <div class="rule">
+        <h3>4. Comparatives and Superlatives</h3>
+        <p>Example: She is taller than me. It’s the best day.<br> Қазақша: Ол менен биік. Бұл ең жақсы күн.</p>
+        <model-viewer src="A1/big_girl.glb" alt="Comparatives" auto-rotate camera-controls ar></model-viewer>
+        <audio controls src="audio/e9.mp3"></audio>
+      </div>
+
+      <div class="rule">
+        <h3>5. Can / Could</h3>
+        <p>Example: I can swim. Could you help me?<br> Қазақша: Мен жүзе аламын. Сіз маған көмектесе аласыз ба?</p>
+        <model-viewer src="A1/swimming_pool.glb" alt="Can/Could" auto-rotate camera-controls ar></model-viewer>
+        <audio controls src="audio/e10.mp3"></audio>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>

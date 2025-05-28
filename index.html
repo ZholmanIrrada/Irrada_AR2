@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3D Модель Мысалы</title>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Сөз: Алма 🍎</h1>
+
+  <p>Мынау – алманың 3D моделі. Оны айналдырып көріңіз!</p>
+
+  <model-viewer 
+    src="https://modelviewer.dev/shared-assets/models/Apple.glb"
+    alt="3D алма моделі" 
+    auto-rotate 
+    camera-controls 
+    shadow-intensity="1" 
+    style="width: 400px; height: 400px;">
+  </model-viewer>
+
+  <button onclick="playAudio()">Дыбысын тыңдау</button>
+  <audio id="wordAudio" src="https://ssl.gstatic.com/dictionary/static/sounds/20200429/apple--_us_1.mp3"></audio>
+
+</body>
+<script src="script.js"></script>
+</html>

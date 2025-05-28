@@ -1,3 +1,1 @@
-function playAudio() {
-  document.getElementById("wordAudio").play();
-}
+// Келешекте интерактив қосу үшін пайдаланылады.
